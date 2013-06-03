@@ -1,0 +1,189 @@
+.clear {
+	clear: both;
+}
+body {
+  background-color: #efefef;
+}
+#container {
+	padding-top: 20px;
+}
+#logo-area img, #logo-area h1 {
+	float: left;
+	cursor: pointer;
+}
+#logo-area img:hover {
+	-webkit-transform: rotate(-15deg);
+	transform: rotate(-15deg);
+}
+#logo-area h1 {
+	font-size: 4em;
+	color: #3fc0e0;
+	cursor: pointer;
+}
+#logo-area h1:hover {
+	color: #5fd0ea;
+}
+
+#menu-title {
+	background-color: #3fc0e0;
+	color: #d5f7ff;
+	padding-left: 54px;
+
+	position: relative;
+	z-index: 100;
+	top: -80px;
+	left: 730px;
+
+	overflow: hidden;
+
+	width: 150px;
+	height: 51px;
+	line-height: 48px;
+
+	text-align: left;
+	font-size: 1.7em;
+
+/*
+	-webkit-text-shadow: 0 2px 0 #1fa0ca;
+	text-shadow: 0 2px 0 #1fa0ca;
+*/
+	cursor: pointer;
+
+	-webkit-user-select: none;
+	user-select: none;
+}
+#menu-title:hover {
+	/* background-color: #5fd0ea; */
+}
+#menu-title #menu-picture {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 40px;
+}
+#menu-title #menu-arrow {
+	position: absolute;
+	top: 13px;
+	right: 8px;
+	width: 30px;
+}
+
+#menu {
+	background-color: #3fc0e0;
+	width: 204px;
+	-webkit-transition: opacity 0.4s;
+	transition: opacity 0.4s;
+	opacity: 0.0;
+
+	position: absolute;
+	z-index: 100;
+
+	left: -54px;
+
+	-webkit-user-select: none;
+	user-select: none;
+	font-size: 0.6em;
+	font-weight: normal;
+}
+#menu .menu-item {
+	width: 70%;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 30%;
+	position: relative;
+	font-size: 1.35em;
+	color: #d5f7ff;
+	/*
+	-webkit-text-shadow: 0 2px 0 #1fa0ca;
+	text-shadow: 0 2px 0 #1fa0ca;
+	*/
+	cursor: pointer;
+}
+#menu .menu-item:hover {
+	background-color: #5fd0ea;
+}
+#menu .menu-item img {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+#menu .menu-item span {
+	position: absolute;
+	top: 0px;
+	left: 55px;
+}
+
+#menu-title, #menu {
+	position: relative;
+	z-index: 100;
+}
+
+#menu-net {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 99;
+}
+
+.classes {
+	width: 100%;
+}
+.classes th {
+	padding-left: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: left;
+	background-color: #ddd;
+}
+.classes tr td {
+	padding: 10px;
+}
+.classes tr:nth-of-type(n) td {
+	cursor: pointer;
+}
+.classes tr:nth-of-type(n) td:hover {
+	background-color: #ddd;
+}
+
+
+/* class-box stuff */
+.class-box {
+	display: block;
+	width: 400px;
+	height: 260px;
+	outline: 1px solid #bbb;
+	margin-bottom: 10px;
+}
+.class-box .upper {
+	width: 100%;
+	height: 13%;
+	line-height: 30px;
+	font-size: 1.2em;
+	background-color: #D5D5D5;
+}
+.class-box .lower {
+	width: 98%;
+	height: 84%;
+	background-color: #fff;
+	padding-top: 2%;
+	padding-left: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

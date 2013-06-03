@@ -1,0 +1,154 @@
+<html>
+<head>
+  <!-- Loading Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <!-- Loading Flat UI -->
+  <link href="css/flat-ui.css" rel="stylesheet">
+  <!-- Loading my personal styling -->
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div id="menu-net"></div>
+  <div id="container" class="container">
+  	<div id="logo-area">
+  		<img src="images/icons/Watches@2x.png" alt="Watches" width="70" style="margin-right: 10px;">
+  		<h1>
+  			classgenius
+  		</h1>
+  		<div class="clear"></div>
+  	</div><!-- /#logo-area -->
+
+  	<div style="height:20px;"></div>
+
+  	<div id="menu-title">
+  		<img id="menu-picture" src="images/edd_profile.png"/>
+  		<span>
+  			Eddie Lee
+  		</span>
+  		<img id="menu-arrow" src="images/arrow.png"/>
+	  	<div id="menu">
+	  		<div class="menu-item">
+	  			<span>My Courses</span>
+	  			<img src="images/my-courses.png"/>
+	  		</div>
+	  		<div class="menu-item">
+	  			<span>Profile</span>
+	  			<img src="images/profile.png"/>
+	  		</div>
+	  		<div class="menu-item">
+	  			<span>Settings</span>
+	  			<img src="images/settings.png"/>
+	  		</div>
+	  	</div><!-- /#menu -->
+  	</div><!-- /#menu-title -->
+
+  	<div style="height:20px;"></div>
+
+  	<div id="content">
+	  	<h3>Follow all classes that seem interesting. In the "My Courses" view, you can categorize these classes by semester.</h3>
+	  </div><!-- /#content -->
+
+  	<div style="height:60px;"></div>
+
+  	<table class="table classes">
+  		<thead>
+	  		<tr>
+	  			<th>Course Title</th>
+	  			<th>Capacity</th>
+	  			<th alt="Course Control Number">CCN</th>
+	  		</tr>
+	  	</thead>
+	  	<tbody>
+	  		<tr>
+	  			<td>CS 188 : Artificial Intelligence</td>
+	  			<td>201/287 (<span style="color:#34AD65">72%</span>)</td>
+	  			<td>26736</td>
+	  		</tr>
+	  		<tr>
+	  			<td>CS 186 : Databases</td>
+	  			<td>75/314 (<span style="color:#FAA901">24%</span>)</td>
+	  			<td>23981</td>
+	  		</tr>
+	  		<tr>
+	  			<td>CS 170 : Algorithms</td>
+	  			<td>62/391 (<span style="color:#F51D19">19%</span>)</td>
+	  			<td>38854</td>
+	  		</tr>
+	  	</tbody>
+  	</table>
+
+  	<div class="class-box">
+  		<div class="upper">
+  			&nbsp;EE 122: Introduction to Communication Networks
+  		</div>
+  		<div class="lower">
+  			Lower
+  		</div>
+  	</div>
+
+  </div><!-- /#container -->
+  <script src="js/jquery-1.8.2.min.js"></script>
+  <script src="js/jquery-ui-1.10.0.custom.min.js"></script>
+  <script src="js/jquery.dropkick-1.0.0.js"></script>
+  <script src="js/custom_checkbox_and_radio.js"></script>
+  <script src="js/custom_radio.js"></script>
+  <script src="js/jquery.tagsinput.js"></script>
+  <script src="js/bootstrap-tooltip.js"></script>
+  <script src="js/jquery.placeholder.js"></script>
+  <script src="js/application.js"></script>
+  <!--[if lt IE 8]>
+    <script src="js/icon-font-ie7.js"></script>
+    <script src="js/icon-font-ie7-24.js"></script>
+  <![endif]-->
+  <script>
+  	$(function() {
+  		COURSETITLE=0;
+  		CAPACITY=1;
+  		CCN=2;
+
+  		$("#menu-title").toggle(function() {
+  			showMenu();
+  		}, function() {
+  			hideMenu();
+  		});
+
+  		$("#menu-net").click(function() {
+  			hideMenu();
+  		});
+
+  		$trs = $(".classes tbody tr");
+  		console.log($trs);
+
+  		$(".classes tbody tr td:nth-of-type(3)").click(function() {
+  			$(this).parent().append('<div style="position:absolute;opacity:1;-webkit-transition:all 2s;transition: all 2s;outline: 2px solid #fff;">Copied to Clipboard!</div>');
+  			console.log($(this).text());
+  		});
+
+  		function hideMenu() {
+  			$("#menu-title").css('overflow','hidden');
+  			$("#menu").css('opacity', '0');
+  		}
+  		function showMenu() {
+  			$("#menu-title").css('overflow','visible');
+  			$("#menu").css('opacity', '1.0');
+  		}
+
+  	});
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
